@@ -66,7 +66,6 @@ class Cylinder
         this.bottom = bottom;
         this.height = height;
     }
-
     public float GetSurface()
     {
         return bottom * 2.0f * MathF.PI * height + bottom * bottom * MathF.PI*2.0f;
@@ -84,7 +83,6 @@ class Sphere
     {
         this.radius = radius;
     }
-
     public float GetSurface()
     {
         return 4.0f * MathF.PI * radius * radius;
@@ -104,7 +102,6 @@ class TriangularPrism
         this.bottomHeight = bottomHeight;
         this.height = height;
     }
-
     public double GetSurface()
     {
         return bottom * bottomHeight + (bottom + bottomHeight + Math.Sqrt(bottom * bottom + bottomHeight * bottomHeight)) * height;
